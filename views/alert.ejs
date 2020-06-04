@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Box</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/de3fecbfa1.js" crossorigin="anonymous"></script>
+</head>
+<body style="color: blue;">
+    
+  <!-- navbar start -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a style="color: blue;"class="navbar-brand" href="#">Alert Box</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/logout">Logout</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+  <!-- navbar end -->
+  <!-- card start  -->
+ 
+  
+
+</head>
+<div>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-lg-6 col-md-8 col-sm-12 offset-lg-3 offset-md-2 offset-sm-0 border border-dark">
+    <form action="/postalert" method="POST">
+      <h3 class="text-center"><i class="fas fa-exclamation-triangle"></i>SEND ALERT</h3>
+      <div class="form-group">
+        <label > Enter location </label>
+        <input class="form-control" name="location"  placeholder="ENTER YOUR LOCATION" type="text" required><br>
+      </div>
+      <div class="form-group">
+        <label for="problem">Enter your problem</label>
+        <textarea class="form-control" name="problem" id="problem" placeholder="ENTER YOUR PROBLEMS" rows="3"></textarea>
+      </div>
+    <label>Send Alert to</label>
+    <div class="form-group">
+      <select class="form-control" name="field">
+        <option>Hostel warden</option>
+        <option>Principal</option>
+        <option>Security</option>
+        <option>Procters</option>
+      </select>  
+    </div>    
+    <input class="btn btn-info" type="submit">
+ </form>
+</div>
+</div>
+</div>
+</div>
+</html>
+
+
+
+  <!-- card end  -->
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
